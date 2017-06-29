@@ -6,6 +6,9 @@ services:
       - mongo
     ports:
       - 80:3000
+    environment:
+      - expt=604800s
+      - exp=2419200s
 
   mongo:
     image: "mongo"
